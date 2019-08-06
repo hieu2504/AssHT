@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/flexslider.css">
+
+
+
+    <title>Document</title>
+    <style>
+        .bg {
+            background: url(images/laptop.png);
+            background-size: cover;
+            
+        }
+
+        .inner {
+
+            padding: 0 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="bg">
+                <div class="inner">
+                    <div class="flexslider">
+                        <ul class="slides" >
+                          <li>
+                            <img src="images/a1.jpg" />
+                          </li>
+                          <li>
+                            <img src="images/a2.jpg" />
+                          </li>
+                          <li>
+                            <img src="images/a3.jpg" />
+                          </li>
+                          <li>
+                            <img src="images/a4.jpg" />
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="custom-navigation">
+                        <a href="#" class="flex-prev">Prev</a></div>
+                        <div class="custom-controls-container"></div>
+                        <div class="custom-navigation"><a href="#" class="flex-next">Next</a>
+                        </div>
+                        
+                      
+                </div>
+            </div>
+        </div>
+    </section>
+    <img onmouseover="this.src='heart.gif'" onmouseout="this.src='ilu.gif'" src="ilu.gif" alt="" width="" height="" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script>
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide",
+            controlsContainer: $(".custom-controls-container"),
+            customDirectionNav: $(".custom-navigation a")
+          });
+        });</script>
+</body>
+
+
+</html>
