@@ -38,6 +38,7 @@ header .inner{
 .header--search{
     display: flex;
     justify-content: space-between;
+    margin: 10px 0;
 }
 
 .header--search__item{
@@ -68,8 +69,14 @@ header .inner{
 .main-nav__item{
     list-style: none;
     padding: 0;
+    
 }
-
+.main-nav__item span{
+background: #4e6ae6;
+padding: 2px 6px;
+border-radius: 50px;
+color: white;
+}
 .banner {
     max-width: 1280px;
     margin: 0 auto;
@@ -353,6 +360,7 @@ margin: 0 auto;
     .information__heading{
         color: white;
         font-size: 1.125rem;
+        padding-bottom: 10px;
     }
     .information-meta__title{
         padding-bottom: 25px;
@@ -380,7 +388,7 @@ margin: 0 auto;
     }
     .list{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.2fr 1fr;
         grid-gap: 10px;
     }
     .list ul{
@@ -435,6 +443,7 @@ footer .inner{
         width: 290px;
         padding: 10px;
     }
+
 }
 
 @media (min-width: 768px){
@@ -467,18 +476,17 @@ footer .inner{
     }
     .header--logo{
         display: grid;
-    grid-template-columns: 0.5fr 1fr;
+        grid-template-columns: 0.5fr 1fr;
     }
     .header--search{
         display: flex;
         justify-content: space-between;
-        grid-gap: 5px;
     }
     .header--search input{
-        padding: 10px;
+        margin: 0 10px;
     }
     .main-nav__item{
-        padding-left: 15px;
+        padding-left: 25px;
     }
     .featured-cousrses .row{
         display: grid;
@@ -532,6 +540,7 @@ footer .inner{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
+        padding-bottom: 50px;
 
     }
     .information__heading{
